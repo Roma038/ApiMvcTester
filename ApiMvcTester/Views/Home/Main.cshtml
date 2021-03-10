@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Main</title>
+    @Styles.Render("~/Content/Site.css")
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("All students","AllStudents","Home")</li>
+            </ul>
+        </nav>
+        <img src="~/Photos/StarrySky.png" alt="Background" width="1515" height="400" />
+        <h3 style="font-size:20px">Hi there!</h3>
+    </div>
+</body>
+</html>

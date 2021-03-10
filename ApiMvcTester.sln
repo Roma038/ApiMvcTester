@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMvcTester", "ApiMvcTester\ApiMvcTester.csproj", "{D2FF7887-1258-4CD2-A483-3D441C50FC97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2FF7887-1258-4CD2-A483-3D441C50FC97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2FF7887-1258-4CD2-A483-3D441C50FC97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2FF7887-1258-4CD2-A483-3D441C50FC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2FF7887-1258-4CD2-A483-3D441C50FC97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B41BF9AF-896F-4348-A589-EBA4C6120444}
+	EndGlobalSection
+EndGlobal

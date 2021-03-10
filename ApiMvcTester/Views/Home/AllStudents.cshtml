@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ApiMvcTester.Models.Student>
+@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Students</title>
+        
+    </head>
+    <body>
+        <div class="tab-content, table, list-group-item">
+            @{ int i = 0;}
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td>|</td>
+                    <td>Name</td>
+                    <td>|</td>
+                    <td>Email</td>
+                    <td>|</td>
+                    <td>Degree</td>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    i++;
+
+                    <tr>
+                        <td>@i</td>
+                        <td>|</td>
+                        <td>@item.Name</td>
+                        <td>|</td>
+                        <td>@item.email</td>
+                        <td>|</td>
+                        <td>@item.Degree</td>
+                        <td>|</td>
+                        <td><input type="button" name="Update" value="Update"
+                                   onclick="location.href='@Url.Action("Update","Home",new { id = item.Id})'"/></td>
+                        <td><input type="button" name="Delete" value="Delete"
+                                   onclick="location.href='@Url.Action("Delete","Home", new { id = item.Id})'"/></td>
+                    </tr>
+
+                }
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="button" width="100" name="Add" value="Add"
+                               onclick="location.href='@Url.Action("Add","Home")'"/></td>
+                </tr>
+            </table>
+
+        </div>
+    </body>
+</html>

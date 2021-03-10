@@ -1,0 +1,26 @@
+﻿@model ApiMvcTester.Models.Student
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+    @Styles.Render("~/Content/LabelStyle")
+</head>
+<body>
+    <div>
+        <form action="/Home/ConfirmEmail" method="post" class="form-control-static">
+            <label for="Name">Name</label>
+            <textarea rows="1" id="Name" cols="20" name="Name"></textarea>
+            <textarea rows="1" cols="30" name="email"></textarea>
+            <textarea rows="1" cols="20" name="Degree"></textarea>
+            <input type="submit" name="Confirm" value="Confirm" />
+        </form>
+    </div>
+</body>
+</html>

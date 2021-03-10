@@ -1,0 +1,26 @@
+﻿@model ApiMvcTester.Models.Student
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Update</title>
+</head>
+<body>
+    <div>
+        <form action="/Home/Update" method="post" class="form-control-static">
+
+            <input type="hidden" name="Id" value="@Model.Id" />
+            <textarea rows="1" cols="20" name="Name">@Model.Name</textarea>
+            <textarea rows="1" cols="30" name="email">@Model.email</textarea>
+            <textarea rows="1" cols="20" name="Degree">@Model.Degree</textarea>
+            <input type="submit" name="Send" value="Send"/>
+        </form>
+    </div>
+</body>
+</html>

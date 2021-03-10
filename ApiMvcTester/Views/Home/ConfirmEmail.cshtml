@@ -1,0 +1,27 @@
+﻿@model ApiMvcTester.Models.Student
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ConfirmEmail</title>
+</head>
+<body>
+    <div>
+        <form action="/Home/Add" method="post" class="form-control-static">
+            <input type="hidden" name="Id" value="@Model.Id" />
+            <input type="hidden" name="Name" value="@Model.Name" />
+            <input type="hidden" name="email" value="@Model.email" />
+            <input type="hidden" name="Degree" value="@Model.Degree" />
+            <input type="hidden" name="ConfirmCode" value="@Model.ConfirmCode"/>
+            <textarea rows="1" cols="20" name="Code_"></textarea>
+            <input type="submit" name="Confirm" value="Confirm" />
+        </form>
+    </div>
+</body>
+</html>
